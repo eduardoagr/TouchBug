@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TouchBug.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TouchBug"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:views="clr-namespace:TouchBug.Views"
+    Title="TouchBug"
+    Shell.FlyoutBehavior="Locked">
+
+    <ShellContent
+        Title="Main"
+        ContentTemplate="{DataTemplate views:MainPage}"
+        Icon="iconblank.png"
+        Route="MainPage"
+        Shell.NavBarIsVisible="true" />
+
+    <Shell.FlyoutHeader>
+        <StackLayout
+            Padding="10"
+            BackgroundColor="{DynamicResource Primary}"
+            VerticalOptions="Start">
+            <Button
+                FontSize="32"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                Text="TouchBug">
+                <Button.Behaviors>
+                    <toolkit:TouchBehavior HoveredBackgroundColor="{AppThemeBinding Dark={DynamicResource MidnightBlue}, Light={DynamicResource White}}" />
+                </Button.Behaviors>
+            </Button>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+</Shell>
