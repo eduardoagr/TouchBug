@@ -5,8 +5,8 @@ public partial class AppShell : Shell {
         InitializeComponent();
     }
 
-    private async Task Button_Clicked(object sender, EventArgs e) {
+    private async void Button_Clicked_1(object sender, EventArgs e) {
 
-        await Shell.Current.DisplayAlert("", "BUG", "OK");
+        await Shell.Current.DisplayAlert("", "I was suppose to change colors when you hover", "OK");
     }
 }

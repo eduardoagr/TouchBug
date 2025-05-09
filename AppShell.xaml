@@ -24,10 +24,10 @@
             <Button
                 FontSize="32"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"
+                Clicked="Button_Clicked_1"
                 Text="TouchBug">
                 <Button.Behaviors>
-                    <toolkit:TouchBehavior HoveredBackgroundColor="{AppThemeBinding Dark={DynamicResource MidnightBlue}, Light={DynamicResource White}}" />
+                    <toolkit:TouchBehavior HoveredBackgroundColor="{AppThemeBinding Dark={DynamicResource Magenta}, Light={DynamicResource White}}" />
                 </Button.Behaviors>
             </Button>
         </StackLayout>
